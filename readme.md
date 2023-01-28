@@ -43,6 +43,8 @@
 - git log --oneline
     - historia commitów
     - zależność między commitami w repo lokalnym i zdalnym (jak bardzo są zupdatowane)
+    - -S [*ciąg znaków znajdujący się w commicie*] --> pozwala przeszukać historię na podstawie wpisanego ciągu znaków jaki myślimy że znajduje się w szukanym przez ans commicie
+        - -p --> pokazuje zmiany bardziej szczegółowo
 - gitk
     - pokazuje historię w ładny graficznie sposób w osobnym oknie
     - pokazuje czy mamy jakieś lokalne nie zacommitowane zmiany
@@ -58,6 +60,8 @@
         - pozwala zacząć pracować na danym branchu
     - *-*
         - pozwala cofnąć się w czasie o jednego commita
+- git gui blame [*nazwa pliku*]
+    - pokazuej **kto** zrbił **które** zmiany w danym pliku
 ### Modyfikacja historii
 - **lokalnie zawsze, zdalnie w ogóle**
 - git commit --amend
