@@ -50,9 +50,9 @@
         - pozwala cofnąć się w czasie o jednego commita
 ---
 ## Branche
-- git branch [*nazwa brancha*]
-    - dodajemy nowy branch, ale nie zaczynamy na nim pracować
 - git branch
     - wypisuje wszystkie branche i zaznacza ten na którym się znajdujemy
+- git branch [*nazwa brancha*]
+    - dodajemy nowy branch, ale nie zaczynamy na nim pracować
 - git checkout -b [*nazwa brancha*]
     - dodajemy nowy branch i zaczynamy w nim pracować
