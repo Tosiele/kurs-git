@@ -21,13 +21,17 @@
 - git remote add origin [*link do repozytorium utworzonego zdalnie*]
     - pokazanie lokalnemu repo gdzie jest repo zdalne z któym ma się połączyć
 - git push origin master
-    - przekazuje wszystkie zmiany i commity z lokalnego repo do originu (na branchu master)
+    - przekazuje wszystkie zmiany i commity z lokalnego repo do originu (na branchu master - branchu który chcemy wypchnąć)
 - git pull origin master
-    - przekazuje wszystkie zmiany i commity z originu do lokalnego repo (na branchu master)
+    - przekazuje wszystkie zmiany i commity z originu do lokalnego repo (na branchu master - branchu który chcemy zaciągnąć)
+    - fetch + merge
 - git clone [*link do repozytorium utworzonego zdalnie*]
     - przed tą komendą należy ustwić się w folderze w którym chcemy zapisać repo
     - pobiera repo utworzone zdalnie razem ze zmianami i commitami
-    -tworzy nowe repo lokalne połączone ze zdalnym
+    - tworzy nowe repo lokalne połączone ze zdalnym
+    - **(albo odwrotnie)**
+- git fetch
+    - pobiera zmiany z repozytorium zdlanego ale nie ingeruje w repozytorium lokalne
 ---
 ## Historia commitów
 - git log --oneline
@@ -63,4 +67,5 @@
 ### Mergowanie
 - scala zmiany z różnych branchy
 - git merge [nazwa brancha]
-    - należy najpierw przenieść się na brancha do któego chcemy coś zmergować
+    - należy najpierw przenieść się na brancha do którego chcemy coś zmergować
+- jeśli historia branchy nie jest wspólna trzeba manualnie rozwiązać konflikt (lub nie - późniejsza część kursu)
