@@ -9,10 +9,10 @@
     - pliki nie śledzone
     - pliki nie zacommitowane
     - zmiany lokalne
-- git commit [-a]
+- git commit [*pliki do zacommitowania*]
     - zatwierdza i zapisuje w historii zmiany
     - musi mieć opis
-    - -a wszystkie ziamy zostaną zacommitowane
+    - -a --> wszystkie ziamy zostaną zacommitowane
 - git diff
     - pliki nie zacommitowane
     - zmiany po ostatnim commicie
@@ -30,3 +30,29 @@
     -tworzy nowe repo lokalne połączone ze zdalnym
 ---
 ## Historia commitów
+- git log --oneline
+    - historia commitów
+    - zależność między commitami w repo lokalnym i zdalnym (jak bardzo są zupdatowane)
+- gitk
+    - pokazuje historię w ładny graficznie sposób w osobnym oknie
+    - pokazuje czy mamy jakieś lokalne nie zacommitowane zmiany
+    - --all --> pokazuje histroię wszystkiego a nie tylko naszego brancha
+- git checkout
+    - cofa repo w czasie do momentu na który go ustawimy
+    - umożliwia dokonanie zmian w poprzednich wersjach repo
+    - commit [*hash commita*]
+        - pokyzkujemy go z git log
+    - tag [*nazwa taga*]
+        - możemy nazwać dany commit za pomocą git tag [*tag jaki dodajemy*] [*hash commita*]
+    - branch [*nazwa brancha*]
+        - pozwala zacząć pracować na danym branchu
+    - *-*
+        - pozwala cofnąć się w czasie o jednego commita
+---
+## Branche
+- git branch [*nazwa brancha*]
+    - dodajemy nowy branch, ale nie zaczynamy na nim pracować
+- git branch
+    - wypisuje wszystkie branche i zaznacza ten na którym się znajdujemy
+- git checkout -b [*nazwa brancha*]
+    - dodajemy nowy branch i zaczynamy w nim pracować
