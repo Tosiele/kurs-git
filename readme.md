@@ -44,15 +44,23 @@
         - pokyzkujemy go z git log
     - tag [*nazwa taga*]
         - możemy nazwać dany commit za pomocą git tag [*tag jaki dodajemy*] [*hash commita*]
-    - branch [*nazwa brancha*]
+    - [*nazwa brancha*]
         - pozwala zacząć pracować na danym branchu
     - *-*
         - pozwala cofnąć się w czasie o jednego commita
 ---
 ## Branche
+### Tworzenie
 - git branch [*nazwa brancha*]
     - dodajemy nowy branch, ale nie zaczynamy na nim pracować
 - git branch
     - wypisuje wszystkie branche i zaznacza ten na którym się znajdujemy
 - git checkout -b [*nazwa brancha*]
     - dodajemy nowy branch i zaczynamy w nim pracować
+- git branch -d [*nazwa brancha*]
+    - usuwa niepotrzebnego brancha
+    - warto użyć po zmergowaniu
+### Mergowanie
+- scala zmiany z różnych branchy
+- git merge [nazwa brancha]
+    - należy najpierw przenieść się na brancha do któego chcemy coś zmergować
