@@ -1,4 +1,5 @@
 # Notatki kurs git
+
 ## Komendy
 - git innit
     - inicjalizuje nowe repozytorium w wybranym folderze
@@ -11,12 +12,15 @@
     - zmiany lokalne
 - git commit [*pliki do zacommitowania*]
     - zatwierdza i zapisuje w historii zmiany
-    - musi mieć opis
+    - musi mieć nazwę/message --> konkretny żeby łatwo było odnaleźć zmiany, jednolity z pozostałymi opisami
     - -a --> wszystkie ziamy zostaną zacommitowane
+    - -m [*message commita*] -m [*opcjonalny dokładniejszy opis wprowadzonych zmian*]
 - git diff
     - pliki nie zacommitowane
     - zmiany po ostatnim commicie
+
 ---
+
 ## Lokalne + zdalne repozytorium
 - git remote add origin [*link do repozytorium utworzonego zdalnie*]
     - pokazanie lokalnemu repo gdzie jest repo zdalne z któym ma się połączyć
@@ -32,7 +36,9 @@
     - **(albo odwrotnie)**
 - git fetch
     - pobiera zmiany z repozytorium zdlanego ale nie ingeruje w repozytorium lokalne
+
 ---
+
 ## Historia commitów
 - git log --oneline
     - historia commitów
@@ -52,7 +58,15 @@
         - pozwala zacząć pracować na danym branchu
     - *-*
         - pozwala cofnąć się w czasie o jednego commita
+### Modyfikacja historii
+- **lokalnie zawsze, zdalnie w ogóle**
+- git commit --amend
+    - zmiany w ostatnim commicie
+- git revert
+    - cofa wszystkie zmiany z ostatniego commita (tworzy nowy commit)
+
 ---
+
 ## Branche
 ### Tworzenie
 - git branch
@@ -64,8 +78,24 @@
 - git branch -d [*nazwa brancha*]
     - usuwa niepotrzebnego brancha
     - warto użyć po zmergowaniu
+- git chery-pick [*nazwa commita*]
+    - pozwala przenosić pojedynczy commit pomiędzy branchami
+
 ### Mergowanie
 - scala zmiany z różnych branchy
 - git merge [nazwa brancha]
     - należy najpierw przenieść się na brancha do którego chcemy coś zmergować
 - jeśli historia branchy nie jest wspólna trzeba manualnie rozwiązać konflikt (lub nie - późniejsza część kursu)
+
+---
+
+## Ignorowanie
+- w głównym folderze ropozytorium stwórz plik *.gitignore*
+- jest to plik tekstowy w którym można wpisać co chcemy żeby było ignorowane i nie śledzone przez gita:
+    - [*nazwa pliku - abc.txt*] --> ignoruje konkretny plik
+    - [*.rozszerzenie - *.txt] --> ignoruje wszystkie pliki o danego typu
+    - [*.nazwa folderu/ - .projekt1/*] --> ignoruje cały folder
+---
+---
+## Pytania
+Jakie są zasady dotyczące nazw commitów
