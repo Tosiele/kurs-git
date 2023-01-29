@@ -1,6 +1,6 @@
 # Notatki kurs git
 
-## Komendy
+## Ogólne komendy
 - git innit
     - inicjalizuje nowe repozytorium w wybranym folderze
 - git add [*nazwa pliku, --all*] 
@@ -100,6 +100,3 @@
     - [*.rozszerzenie - *.txt] --> ignoruje wszystkie pliki o danego typu
     - [*.nazwa folderu/ - .projekt1/*] --> ignoruje cały folder
 ---
----
-## Pytania
-Jakie są zasady dotyczące nazw commitów
